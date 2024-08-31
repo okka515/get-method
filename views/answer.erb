@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= @message %> | まるばつクイズ</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body class="result">
+    <div
+     <% if @is_correct %>
+        class="container correct"
+     <% else %>
+        class="container incorrect"
+     <% end %>
+     >
+      <span class="result-text">
+        <%= @message %>
+        <p><%= @messagetext %></p>
+      </span>
+      <img src="<%= @bilson_img %>" />
+    </div>
+  </body>
+</html>
